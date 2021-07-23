@@ -74,9 +74,9 @@ server.post("/api/auth/register", async (req, res, next) => {  //eslint-disable-
 server.post("/api/auth/login", async (req, res, next) => { //eslint-disable-line
  
   try {
-    const { username, password } = req.body;
-    // const username = 'sylvie'
-    // const password = 'password'
+    //const { username, password } = req.body;
+    const username = 'sylvie'
+    const password = 'password'
     //if username and password are not provided, return error
     if (!username || !password) {
       return res.status(404).json({
